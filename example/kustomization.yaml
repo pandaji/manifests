@@ -11,9 +11,9 @@ resources:
 - ../common/istio-1-9-0/istio-namespace/base
 - ../common/istio-1-9-0/istio-install/base
 # OIDC Authservice
-- ../common/oidc-authservice/base
+# - ../common/oidc-authservice/base
 # Dex
-- ../common/dex/overlays/istio
+# - ../common/dex/overlays/istio
 # KNative
 - ../common/knative/knative-serving-crds/base
 - ../common/knative/knative-serving-install/base
@@ -31,9 +31,9 @@ resources:
 # Kubeflow Pipelines
 - ../apps/pipeline/upstream/env/platform-agnostic-multi-user
 # KFServing
-- ../apps/kfserving/upstream/overlays/kubeflow
+# - ../apps/kfserving/upstream/overlays/kubeflow
 # Katib
-- ../apps/katib/upstream/installs/katib-with-kubeflow
+# - ../apps/katib/upstream/installs/katib-with-kubeflow
 # Central Dashboard
 - ../apps/centraldashboard/upstream/overlays/istio
 # Admission Webhook
@@ -47,19 +47,19 @@ resources:
 # Volumes Web App
 - ../apps/volumes-web-app/upstream/overlays/istio
 # Tensorboards Web App
--  ../apps/tensorboard/tensorboard-controller/upstream/overlays/kubeflow
+# -  ../apps/tensorboard/tensorboard-controller/upstream/overlays/kubeflow
 # Tensorboard Controller
--  ../apps/tensorboard/tensorboards-web-app/upstream/overlays/istio
+# -  ../apps/tensorboard/tensorboards-web-app/upstream/overlays/istio
 # TFJob Operator
-- ../apps/tf-training/upstream/overlays/kubeflow
+# - ../apps/tf-training/upstream/overlays/kubeflow
 # Pytorch Operator
-- ../apps/pytorch-job/upstream/overlays/kubeflow
+# - ../apps/pytorch-job/upstream/overlays/kubeflow
 # MPI Operator
-- ../apps/mpi-job/upstream/overlays/kubeflow
+# - ../apps/mpi-job/upstream/overlays/kubeflow
 # MXNet Operator
-- ../apps/mxnet-job/upstream/overlays/kubeflow
+# - ../apps/mxnet-job/upstream/overlays/kubeflow
 # XGBoost Operator
-- ../apps/xgboost-job/upstream/overlays/kubeflow
+# - ../apps/xgboost-job/upstream/overlays/kubeflow
 
 # User namespace
 - ../common/user-namespace/base
