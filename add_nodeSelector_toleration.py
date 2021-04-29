@@ -1,4 +1,5 @@
 import yaml
+import sys 
 
 output = []
 toleration = {'tolerations': [{
@@ -11,7 +12,7 @@ node_selector = {'nodeSelector':
     {'cpu.node': 'true'}
 }
 
-with open('original.yaml','r') as input_file:
+with open(sys.argv[1], 'r') as input_file:
     all_files = yaml.load_all(input_file)
 
     for f in all_files:
@@ -21,5 +22,5 @@ with open('original.yaml','r') as input_file:
         output.append(f)
         
 
-with open('output.yaml', 'w') as output_file:
+with open(sys.argv[2], 'w') as output_file:
     yaml.dump_all(output, output_file)
