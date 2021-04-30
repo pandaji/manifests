@@ -1,0 +1,8 @@
+apiVersion: kubeflow.org/v1
+kind: Profile
+metadata:
+  name: kubeflow-jijiahao
+spec:
+  owner:
+    kind: User
+    name: jijiahao@sea.com
